@@ -59,7 +59,7 @@ const PrizesCarousel: React.FC = () => {
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 30000,
+    autoplaySpeed: 3000,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     responsive: [
