@@ -1,0 +1,35 @@
+{
+  "mapTitle": "Explore each county's prize",
+  "language": "Language",
+  "english": "English",
+  "irish": "Gaeilge",
+  "ageVerificationTitle": "Age Verification",
+  "ageVerificationPrompt": "Please confirm if you are 18 years of age or older to access this content.",
+  "yes": "Yes",
+  "no": "No",
+  "accessDenied": "Access denied. You must be 18 or older to view this content.",
+  "accessDeniedGuidance": "Please close this window or tab.",
+  "welcomeMessage": "Welcome to our Website!",
+  "navigation": {
+    "about": "About the Draw",
+    "prizes": "Prizes",
+    "beneficiaries": "Beneficiaries",
+    "buyTicket": "Buy a Ticket"
+  },
+  "hero": {
+    "title": "The Spirit of Ireland Draw",
+    "subtitle": "Enter the draw for 32 chances to win a bottle of spirits"
+  },
+  "aboutTheDraw": {
+    "title": "About the Draw",
+    "visualAlt": "A collection of 32 bottles of Irish spirits, one from each county.",
+    "howItWorksTitle": "How it works",
+    "howItWorksDetails": "32 bottles of spirits are up for grabs, one from each county, 32 lucky winners.",
+    "whenTitle": "When",
+    "whenDetails": "Main draw will take place December 28th with prize winners throughout December.",
+    "howMuchTitle": "How much",
+    "howMuchDetails": "€10 per ticket.",
+    "whoBenefitsTitle": "Who benefits",
+    "whoBenefitsDetails": "All proceeds go to The Con Houlihan Foundation and the Dingle Rugby Club."
+  }
+} 

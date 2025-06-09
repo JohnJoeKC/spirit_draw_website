@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-100 text-gray-900;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* --- Carousel Dots Spacing Fix --- */
+.slick-dots {
+  bottom: 0px !important;
+} 
+.slick-dots li {
+  width: 10px !important;
+}
+.slick-dots li button{
+  width: 10px !important;
+}
+.slick-dots li button:before {
+  color: #ccc !important;         /* Inactive dot color */
+  font-size: 10px !important;     /* Dot size */
+  opacity: 1 !important;          /* Make sure it's fully visible */
+}
+.slick-dots li.slick-active button:before {
+  color: #009A49 !important;      /* Your primary color for active dot */
+  opacity: 1 !important;
+}

@@ -1,0 +1,76 @@
+import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next'; // Import useTranslation
+import Header from './sections/Header';
+import CssBaseline from '@mui/material/CssBaseline';
+import Container from '@mui/material/Container';
+import Typography from '@mui/material/Typography'; // Import Typography for the message
+import AgeVerificationDialog from './components/AgeVerificationDialog'; // Import the dialog
+import { ThemeProvider } from '@mui/material/styles'; // Import ThemeProvider
+import theme from './theme'; // Import the theme from the dedicated file
+import './i18n'; // Import the i18n configuration
+import LanguageChanger from './components/LanguageChanger'; // Import LanguageChanger
+import Box from '@mui/material/Box'; // For layout
+import Prizes from './sections/Prizes'; // Import Prizes section
+import Beneficiaries from './sections/Beneficiaries'; // Import Beneficiaries section
+import HeroSection from './sections/HeroSection'; // Import HeroSection
+import AboutTheDraw from './sections/AboutTheDraw';
+
+function App() {
+  const { t } = useTranslation(); // Initialize useTranslation
+  const [isAgeVerified, setIsAgeVerified] = useState(false);
+  const [showAgeDialog, setShowAgeDialog] = useState(true);
+  const [accessDeniedMessageKey, setAccessDeniedMessageKey] = useState<string | null>(null);
+
+  const handleAgeConfirm = () => {
+    setIsAgeVerified(true);
+    setShowAgeDialog(false);
+    setAccessDeniedMessageKey(null);
+  };
+
+  const handleAgeDeny = () => {
+    setIsAgeVerified(false);
+    setShowAgeDialog(false);
+    setAccessDeniedMessageKey('accessDenied'); // Set the key for translation
+  };
+
+  // Show dialog on initial load - useEffect not strictly needed here as default state handles it.
+  // But if you wanted to re-trigger it under other conditions, useEffect would be the place.
+
+  return (
+    <ThemeProvider theme={theme}> {/* Apply the theme to the entire app */}
+      <CssBaseline /> {/* CssBaseline should be after ThemeProvider to use theme defaults */}
+      {isAgeVerified ? (
+        <>
+          <Header /> {/* Header is now at the top */}
+          <Container maxWidth="lg"> {/* Main content container */}
+            <Box className="min-h-screen py-8">
+              <HeroSection />
+              <AboutTheDraw />
+              <Prizes />
+              <Beneficiaries />
+            </Box>
+          </Container>
+        </>
+      ) : accessDeniedMessageKey ? (
+        <Container maxWidth="lg"> {/* Ensure consistent container usage */}
+          <div className="min-h-screen flex flex-col items-center justify-center py-8">
+            <Typography variant="h6" color="error" align="center">
+              {t(accessDeniedMessageKey)} {/* Translate the message */}
+            </Typography>
+            <Typography variant="body2" align="center" className="mt-2">
+              {t('accessDeniedGuidance')} {/* Translate the guidance text */}
+            </Typography>
+          </div>
+        </Container>
+      ) : null} {/* Render nothing if dialog is still supposed to be open or hasn't been interacted with */}
+
+      <AgeVerificationDialog
+        open={showAgeDialog}
+        onConfirm={handleAgeConfirm}
+        onDeny={handleAgeDeny}
+      />
+    </ThemeProvider>
+  );
+}
+
+export default App; 

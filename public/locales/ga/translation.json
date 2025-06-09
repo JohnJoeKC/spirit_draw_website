@@ -1,0 +1,35 @@
+{
+  "mapTitle": "Téigh os cionn nó cliceáil ar chontae",
+  "language": "Teanga",
+  "english": "English",
+  "irish": "Gaeilge",
+  "ageVerificationTitle": "Fíorú Aoise",
+  "ageVerificationPrompt": "Deimhnigh, le do thoil, go bhfuil tú 18 mbliana d’aois nó níos sine chun rochtain a fháil ar an ábhar seo.",
+  "yes": "Tá",
+  "no": "Níl",
+  "accessDenied": "Rochtain diúltaithe. Caithfidh tú a bheith 18 mbliana d’aois nó níos sine chun an t-ábhar seo a fheiceáil.",
+  "accessDeniedGuidance": "Dún an fhuinneog nó an cluaisín seo, le do thoil.",
+  "welcomeMessage": "Fáilte chuig ár Suíomh Gréasáin!",
+  "navigation": {
+    "about": "Maidir leis an gCrannchur",
+    "prizes": "Duaiseanna",
+    "beneficiaries": "Tairbhithe",
+    "buyTicket": "Ceannaigh Ticéad"
+  },
+  "hero": {
+    "title": "Crannchur Spiorad na hÉireann",
+    "subtitle": "Glac páirt sa chrannchur le 32 seans buidéal biotáille a bhuachan"
+  },
+  "aboutTheDraw": {
+    "title": "Maidir leis an gCrannchur",
+    "visualAlt": "Bailiúchán de 32 buidéal biotáille Éireannach, ceann amháin ó gach contae.",
+    "howItWorksTitle": "Conas a oibríonn sé",
+    "howItWorksDetails": "Tá 32 buidéal biotáille le buachan, ceann amháin ó gach contae, 32 buaiteoir ádhúil.",
+    "whenTitle": "Cén uair",
+    "whenDetails": "Beidh an príomhchrannchur ar siúl an 28 Nollaig agus buaiteoirí duaiseanna i rith mhí na Nollag.",
+    "howMuchTitle": "Cé mhéad",
+    "howMuchDetails": "€10 an ticéad.",
+    "whoBenefitsTitle": "Cé a bhaineann leas as",
+    "whoBenefitsDetails": "Téann na fáltais go léir chuig Fondúireacht Con Houlihan agus Club Rugbaí an Daingin."
+  }
+} 
