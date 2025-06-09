@@ -93,7 +93,7 @@ const PrizesCarousel: React.FC = () => {
         {prizes.map((prize) => (
           <div key={prize.county} className="px-2">
             <ProductSummary
-              image={`/src/assets/product_images/${prize.county}.png`}
+              image={`/product_images/${prize.county}.png`}
               name={prize.name}
               county={prize.county}
               spiritType={prize.spiritType}

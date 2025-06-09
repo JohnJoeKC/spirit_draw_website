@@ -42,17 +42,13 @@ const svgIdToCountyNameMap: { [key: string]: string } = {
   'Co_Wicklow': 'wicklow'
 };
 
-// Dynamically import all images from the src/assets/product_images folder
-const imageContext = import.meta.glob<{ default: string }>('/src/assets/product_images/*', { eager: true });
-
-const countyImages: { [key: string]: string } = Object.entries(imageContext)
-  .reduce((acc, [path, module]) => {
-    const fileName = path.split('/').pop()?.split('.')[0];
-    if (fileName) {
-      acc[fileName.toLowerCase()] = module.default;
-    }
-    return acc;
-  }, {} as { [key: string]: string });
+// Create a mapping to the image paths in the public directory
+const countyImages: { [key: string]: string } = Object.fromEntries(
+  Object.values(svgIdToCountyNameMap).map(countyName => [
+    countyName,
+    `/product_images/${countyName}.png`
+  ])
+);
 
 const InteractiveMap: React.FC = () => {
   const { t } = useTranslation(); // Initialize useTranslation
