@@ -281,7 +281,7 @@ const InteractiveMap: React.FC = () => {
   }, [svgRef.current]);
 
   return (
-    <Box className="flex flex-col items-center justify-center h-full max-h-[400px] gap-4 overflow-hidden">
+    <Box className="flex flex-col items-center justify-center h-full max-h-[400px] gap-4">
       <Typography variant="h5" component="h1">
         {t('mapTitle')} {/* Use t function for translation */}
       </Typography>
@@ -290,16 +290,14 @@ const InteractiveMap: React.FC = () => {
           {errorMessage}
         </Alert>
       )}
-      <Box className="flex items-center justify-center overflow-hidden flex-1 w-110% overflow-hidden" style={{ aspectRatio: '1449.8/1807.07' }}> {/* Match SVG's aspect ratio */}
+      <Box className="flex items-center justify-center flex-1 relative" style={{ aspectRatio: '1449.8/1807.07' }}> {/* Match SVG's aspect ratio */}
         <object 
           ref={svgRef} 
           type="image/svg+xml" 
           aria-label="Interactive map of Ireland"
-          className="flex items-center justify-center inset-0 w-full h-full overflow-hidden" // Fill container while maintaining aspect ratio
+          className="flex items-center justify-center inset-0 w-full h-full overflow-hidden relative" // Fill container while maintaining aspect ratio
           style={{
             overflow: 'hidden',
-            width: '110%',
-            height: '110%',
           }}
         >
           Map of Ireland loading...
@@ -308,7 +306,7 @@ const InteractiveMap: React.FC = () => {
           <Paper
             elevation={0}
             style={{ ...previewStyle, backgroundColor: 'transparent' }}
-            className="p-1 rounded-lg shadow-md"
+            className="absolute p-1 rounded-lg shadow-md"
           >
             <img
               src={countyImages[hoveredCountyName]}

@@ -10,7 +10,7 @@ const Prizes: React.FC = () => {
   return (
     <Box 
       maxWidth="lg"
-      className="px-8 md:px-16"
+      className="px-8 md:px-16 w-full"
       id="prizes"
     >
       <Typography variant="h2" component="h2" gutterBottom align="center">

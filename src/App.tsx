@@ -8,7 +8,6 @@ import AgeVerificationDialog from './components/AgeVerificationDialog'; // Impor
 import { ThemeProvider } from '@mui/material/styles'; // Import ThemeProvider
 import theme from './theme'; // Import the theme from the dedicated file
 import './i18n'; // Import the i18n configuration
-import LanguageChanger from './components/LanguageChanger'; // Import LanguageChanger
 import Box from '@mui/material/Box'; // For layout
 import Prizes from './sections/Prizes'; // Import Prizes section
 import Beneficiaries from './sections/Beneficiaries'; // Import Beneficiaries section
