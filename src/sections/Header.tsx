@@ -106,7 +106,14 @@ const Header: React.FC = () => {
   );
 
   return (
-    <AppBar className="flex items-center" position="sticky" color="inherit" elevation={0} sx={{ backgroundColor: 'background.paper' }}>
+    <AppBar 
+      className="flex items-center" 
+      position="sticky" color="inherit" 
+      elevation={0} 
+      sx={{ 
+        backgroundColor: 'background.paper',
+        zIndex: 10, // Ensure it's above the access denied overlay
+      }}>
       <Box 
         maxWidth="lg"
         className="w-full px-8 md:px-16"

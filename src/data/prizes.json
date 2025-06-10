@@ -3,43 +3,43 @@
     "county": "Antrim",
     "name": "Lír Whiskey",
     "spiritType": "Whiskey",
-    "description": "A fine whiskey from the heart of Antrim."
+    "description": "A premium Irish whiskey that captures the essence of the stunning landscape of the Glens of Antrim."
   },
   {
     "county": "Carlow",
-    "name": "Busker Whiskey",
+    "name": "Busker Blended Whiskey",
     "spiritType": "Whiskey",
-    "description": "A smooth and creamy whiskey brewed in Carlow."
+    "description": "A meticulous blend of high-quality Single Grain, alongside a generous infusion of Single Malt and Single Pot Still, striking the perfect balance of strength and sophistication."
   },
   {
     "county": "Cavan",
     "name": "Molly's Irish Cream",
     "spiritType": "Irish Cream",
-    "description": "A smooth and creamy Irish cream liqueur."
+    "description": "A combination of fresh dairy cream with aged Irish Whiskey, fine Irish Spirits and natural chocolate flavours, making a truly exquisite Irish cream liqueur."
   },
   {
     "county": "Clare",
     "name": "Bunratty Mead",
     "spiritType": "Mead",
-    "description": "A smooth and creamy mead from the heart of Clare."
+    "description": "A medium-sweet mead made from an ancient Irish recipe which including vine fruits, honey and herbs. Mead is the traditional drink of newly-weds and is the where the word 'honeymoon' comes from."
   },
   {
     "county": "Cork",
     "name": "West Cork Whiskey",
     "spiritType": "Whiskey",
-    "description": "A smooth, triple-distilled whiskey from West Cork."
+    "description": "A blend of grain and malt whiskey aged in bourbon casks for 4 years. The result is a beautifully balanced whiskey with a vanilla and lingering sweetness."
   },
   {
     "county": "Derry",
-    "name": "Quiet Man Whiskey",
+    "name": "Quiet Man Blended Whiskey",
     "spiritType": "Whiskey",
-    "description": "A smooth and creamy whiskey from the historic city of Derry."
+    "description": "Expertly distilled in small batches and fully matured in first fill Bourbon casks of American Oak, The Quiet Man is known for its ultra-smooth profile."
   },
   {
     "county": "Donegal",
     "name": "Muff Potato Gin",
     "spiritType": "Gin",
-    "description": "A coastal-inspired gin made from potatoes from Donegal."
+    "description": "Multi-award winning gin distilled using four different types of Irish potatoes. Low juniper profile, uniquely infused with mandarin, rosemary, lemon and elderflower botanicals, finished with champagne extract."
   },
   {
     "county": "Down",
@@ -159,7 +159,7 @@
     "county": "Tyrone",
     "name": "Symphonia Gin",
     "spiritType": "Gin",
-    "description": "A smooth and elegant gin."
+    "description": "A smooth and elegant gin from the Tyrone."
   },
   {
     "county": "Waterford",
@@ -171,7 +171,7 @@
     "county": "Westmeath",
     "name": "Kilbeggan Whiskey",
     "spiritType": "Whiskey",
-    "description": "A smooth and elegant whiskey from the heart of Ireland's Lakelands."
+    "description": "Traditional Irish whiskey distilled to preserve more flavour whilst retaining the classic Irish smoothness."
   },
   {
     "county": "Wexford",

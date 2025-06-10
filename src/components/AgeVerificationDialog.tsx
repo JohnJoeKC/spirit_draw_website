@@ -23,19 +23,28 @@ const AgeVerificationDialog: React.FC<AgeVerificationDialogProps> = ({
   return (
     <Dialog
       open={open}
-      onClose={onDeny} // Typically, closing the dialog via backdrop or ESC should be a "deny" action in this context
+      onClose={onDeny}
       aria-labelledby="age-verification-dialog-title"
-      disableEscapeKeyDown // Prevent closing with ESC key
+      disableEscapeKeyDown
+      sx={{
+        '& .MuiDialog-paper': {
+          zIndex: 1000,
+        },
+        '& .MuiBackdrop-root': {
+          backgroundColor: 'rgba(0, 0, 0, 0.8)',
+          zIndex: 999,
+        },
+      }}
       slotProps={{
         backdrop: {
           style: {
-            pointerEvents: 'none', // Prevent backdrop click from closing, effectively making it modal
+            pointerEvents: 'none',
           },
         },
       }}
     >
       <DialogTitle id="age-verification-dialog-title">{t('ageVerificationTitle')}</DialogTitle>
-      <DialogContent >
+      <DialogContent>
         <DialogContentText>
           {t('ageVerificationPrompt')}
         </DialogContentText>

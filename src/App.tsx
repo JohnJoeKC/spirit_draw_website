@@ -38,57 +38,57 @@ function App() {
   return (
     <ThemeProvider theme={theme}> {/* Apply the theme to the entire app */}
       <CssBaseline /> {/* CssBaseline should be after ThemeProvider to use theme defaults */}
-      {isAgeVerified ? (
-        <>
-          <Header/> {/* Header is now at the top */}
-          <Container 
-            maxWidth={false}
-            disableGutters
-            className="flex flex-col items-center justify-center w-full mt-10"
-          > {/* Main content container */}
-
-            <Box className="flex flex-col items-center justify-center w-full gap-10">
-              <Box className="flex flex-col items-center w-full">
-                <HeroSection />
-              </Box>
-              <Box 
-                className="flex flex-col items-center w-full" 
-                sx={{ backgroundColor: 'background.paper' }}>
-                <AboutTheDraw />
-              </Box>
-              <Box className="flex flex-col items-center w-full">
-                <Prizes />
-              </Box>
-              <Box 
-                className="flex flex-col items-center w-full" 
-                sx={{ backgroundColor: 'background.paper' }}>
-                <Beneficiaries />
-              </Box>
-            </Box>
-          </Container>
-        </>
-      ) : accessDeniedMessageKey ? (
+      <div className="relative">
+        {/* Main content always renders */}
+        <Header />
         <Container 
           maxWidth={false}
           disableGutters
-          className="w-full"
-        > {/* Ensure consistent container usage */}
-          <div className="min-h-screen flex flex-col items-center justify-center py-8">
-            <Typography variant="h6" color="error" align="center">
-              {t(accessDeniedMessageKey)} {/* Translate the message */}
-            </Typography>
-            <Typography variant="body2" align="center" className="mt-2">
-              {t('accessDeniedGuidance')} {/* Translate the guidance text */}
-            </Typography>
-          </div>
+          className="flex flex-col items-center justify-center w-full mt-10"
+        > {/* Main content container */}
+          <Box className="flex flex-col items-center justify-center w-full gap-10">
+            <Box className="flex flex-col items-center w-full">
+              <HeroSection />
+            </Box>
+            <Box 
+              className="flex flex-col items-center w-full" 
+              sx={{ backgroundColor: 'background.paper' }}>
+              <AboutTheDraw />
+            </Box>
+            <Box className="flex flex-col items-center w-full">
+              <Prizes />
+            </Box>
+            <Box 
+              className="flex flex-col items-center w-full" 
+              sx={{ backgroundColor: 'background.paper' }}>
+              <Beneficiaries />
+            </Box>
+          </Box>
         </Container>
-      ) : null} {/* Render nothing if dialog is still supposed to be open or hasn't been interacted with */}
 
-      <AgeVerificationDialog
-        open={showAgeDialog}
-        onConfirm={handleAgeConfirm}
-        onDeny={handleAgeDeny}
-      />
+        {/* Access denied message */}
+        {accessDeniedMessageKey && (
+          <div className="fixed inset-0 bg-black flex items-center justify-center z-20">
+            <Container maxWidth={false} disableGutters className="w-full h-full">
+              <div className="min-h-screen flex flex-col items-center justify-center">
+                <Typography variant="h6" color="error" align="center">
+                  {t(accessDeniedMessageKey)} {/* Translate the message */}
+                </Typography>
+                <Typography variant="body2" color="white" align="center" className="mt-2">
+                  {t('accessDeniedGuidance')} {/* Translate the guidance text */}
+                </Typography>
+              </div>
+            </Container>
+          </div>
+        )}
+
+        {/* Age verification dialog */}
+        <AgeVerificationDialog
+          open={showAgeDialog}
+          onConfirm={handleAgeConfirm}
+          onDeny={handleAgeDeny}
+        />
+      </div>
     </ThemeProvider>
   );
 }
