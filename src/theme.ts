@@ -47,7 +47,7 @@ const theme = createTheme({
     h6: {
       fontFamily: '"Cormorant Garamond", serif',
       fontSize: '1.2rem',
-      fontWeight: 800,
+      fontWeight: 900,
     },
     body1: {
       fontSize: '1.2rem',

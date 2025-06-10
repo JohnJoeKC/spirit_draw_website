@@ -21,7 +21,7 @@ const HeroSection: React.FC = () => {
             {t('hero.subtitle')}
           </Typography>
         </Box>
-        <img src={FullLineup} alt="Full Lineup" className="w-full h-auto mt-4" />
+        <img src={FullLineup} alt="Full Lineup" className="w-full h-auto" />
         <Button
           variant="contained"
           color="primary"
