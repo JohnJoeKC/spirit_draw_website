@@ -6,12 +6,6 @@
     "description": "A fine whiskey from the heart of Antrim."
   },
   {
-    "county": "Armagh",
-    "name": "Armagh Apple Brandy",
-    "spiritType": "Brandy",
-    "description": "Distilled from the famous Armagh Bramley apples."
-  },
-  {
     "county": "Carlow",
     "name": "Busker Whiskey",
     "spiritType": "Whiskey",
@@ -55,7 +49,7 @@
   },
   {
     "county": "Dublin",
-    "name": "Dublin Liberties Whiskey",
+    "name": "Teeling Whiskey",
     "spiritType": "Whiskey",
     "description": "A classic Irish whiskey from the heart of the capital."
   },
@@ -79,9 +73,9 @@
   },
   {
     "county": "Kildare",
-    "name": "Kildare Thoroughbred Vodka",
+    "name": "Church of Oak",
     "spiritType": "Vodka",
-    "description": "A premium vodka as refined as a Kildare racehorse."
+    "description": "A premium vodka from the heart of Kildare."
   },
   {
     "county": "Kilkenny",
@@ -97,7 +91,7 @@
   },
   {
     "county": "Leitrim",
-    "name": "Leitrim Gunpowder Gin",
+    "name": "Drumshambo Gin",
     "spiritType": "Gin",
     "description": "An oriental-spiced gin from the shores of Lough Allen."
   },
@@ -115,19 +109,19 @@
   },
   {
     "county": "Louth",
-    "name": "Louth Honey Liqueur",
-    "spiritType": "Liqueur",
-    "description": "A whiskey liqueur sweetened with Boyne Valley honey."
+    "name": "Cooley Single Malt",
+    "spiritType": "Whiskey",
+    "description": "A smooth and creamy whiskey from the heart of Louth."
   },
   {
     "county": "Mayo",
-    "name": "Mayo Atlantic Gin",
+    "name": "Loch Measc Gin",
     "spiritType": "Gin",
     "description": "A refreshing gin with botanicals from the Mayo coastline."
   },
   {
     "county": "Meath",
-    "name": "Meath Single Malt",
+    "name": "Boann Single Malt",
     "spiritType": "Whiskey",
     "description": "A historic single malt from the Royal County."
   },
