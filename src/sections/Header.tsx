@@ -107,7 +107,7 @@ const Header: React.FC = () => {
 
   return (
     <AppBar 
-      className="flex items-center" 
+      className="flex items-center border-b-4 border-white" 
       position="sticky" color="inherit" 
       elevation={0} 
       sx={{ 
