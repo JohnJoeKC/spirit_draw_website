@@ -68,13 +68,13 @@ function App() {
 
         {/* Access denied message */}
         {accessDeniedMessageKey && (
-          <div className="fixed inset-0 bg-black flex items-center justify-center z-20">
+          <div className="fixed inset-0 bg-white flex items-center justify-center z-20">
             <Container maxWidth={false} disableGutters className="w-full h-full">
               <div className="min-h-screen flex flex-col items-center justify-center">
                 <Typography variant="h6" color="error" align="center">
                   {t(accessDeniedMessageKey)} {/* Translate the message */}
                 </Typography>
-                <Typography variant="body2" color="white" align="center" className="mt-2">
+                <Typography variant="body1" align="center" className="mt-2">
                   {t('accessDeniedGuidance')} {/* Translate the guidance text */}
                 </Typography>
               </div>

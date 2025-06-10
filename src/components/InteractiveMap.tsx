@@ -97,10 +97,8 @@ const InteractiveMap: React.FC = () => {
       const pathRect = pathElement.getBoundingClientRect();
       
       // Calculate consistent position for both image preview and error popup
-      const popupTop = pathRect.top + window.scrollY + (pathRect.height / 2); // Center vertically on path
-      console.log("popupTop:", popupTop);
-      const popupLeft = pathRect.left + window.scrollX + (pathRect.width / 2); // Center horizontally on path
-      console.log("popupLeft:", popupLeft);
+      const popupTop = pathRect.top + (pathRect.height / 2); // Center vertically on path
+      const popupLeft = pathRect.left + (pathRect.width / 2); // Center horizontally on path
 
       const newPreviewStyle: React.CSSProperties = {
         display: 'block',
