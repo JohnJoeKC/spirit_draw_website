@@ -1,192 +1,192 @@
 [
   {
-    "county": "antrim",
+    "county": "Antrim",
     "name": "Lír Whiskey",
     "spiritType": "Whiskey",
     "description": "A fine whiskey from the heart of Antrim."
   },
   {
-    "county": "armagh",
+    "county": "Armagh",
     "name": "Armagh Apple Brandy",
     "spiritType": "Brandy",
     "description": "Distilled from the famous Armagh Bramley apples."
   },
   {
-    "county": "carlow",
+    "county": "Carlow",
     "name": "Busker Whiskey",
     "spiritType": "Whiskey",
     "description": "A smooth and creamy whiskey brewed in Carlow."
   },
   {
-    "county": "cavan",
+    "county": "Cavan",
     "name": "Molly's Irish Cream",
     "spiritType": "Irish Cream",
     "description": "A smooth and creamy Irish cream liqueur."
   },
   {
-    "county": "clare",
+    "county": "Clare",
     "name": "Bunratty Mead",
     "spiritType": "Mead",
     "description": "A smooth and creamy mead from the heart of Clare."
   },
   {
-    "county": "cork",
+    "county": "Cork",
     "name": "West Cork Whiskey",
     "spiritType": "Whiskey",
     "description": "A smooth, triple-distilled whiskey from West Cork."
   },
   {
-    "county": "derry",
+    "county": "Derry",
     "name": "Quiet Man Whiskey",
     "spiritType": "Whiskey",
     "description": "A smooth and creamy whiskey from the historic city of Derry."
   },
   {
-    "county": "donegal",
+    "county": "Donegal",
     "name": "Muff Potato Gin",
     "spiritType": "Gin",
     "description": "A coastal-inspired gin made from potatoes from Donegal."
   },
   {
-    "county": "down",
+    "county": "Down",
     "name": "Copeland Smuggler's Rum",
     "spiritType": "Rum",
     "description": "An award-winning rum from the shores of Strangford Lough."
   },
   {
-    "county": "dublin",
+    "county": "Dublin",
     "name": "Dublin Liberties Whiskey",
     "spiritType": "Whiskey",
     "description": "A classic Irish whiskey from the heart of the capital."
   },
   {
-    "county": "fermanagh",
+    "county": "Fermanagh",
     "name": "Boatyard Vodka",
     "spiritType": "Vodka",
     "description": "A traditional Irish vodka from the Fermanagh Lakelands."
   },
   {
-    "county": "galway",
+    "county": "Galway",
     "name": "Connemara Whiskey",
     "spiritType": "Whiskey",
     "description": "A smooth whiskey from the Connemara region."
   },
   {
-    "county": "kerry",
+    "county": "Kerry",
     "name": "Dingle Gin",
     "spiritType": "Gin",
     "description": "A world-renowned gin from the Dingle Peninsula."
   },
   {
-    "county": "kildare",
+    "county": "Kildare",
     "name": "Kildare Thoroughbred Vodka",
     "spiritType": "Vodka",
     "description": "A premium vodka as refined as a Kildare racehorse."
   },
   {
-    "county": "kilkenny",
+    "county": "Kilkenny",
     "name": "BallyKeefe Gin",
     "spiritType": "Gin",
     "description": "A smooth and flavourful gin from Kilkenny."
   },
   {
-    "county": "laois",
+    "county": "Laois",
     "name": "Feeney's Irish Cream",
     "spiritType": "Irish Cream",
     "description": "A smooth and creamy Irish cream liqueur."
   },
   {
-    "county": "leitrim",
+    "county": "Leitrim",
     "name": "Leitrim Gunpowder Gin",
     "spiritType": "Gin",
     "description": "An oriental-spiced gin from the shores of Lough Allen."
   },
   {
-    "county": "limerick",
+    "county": "Limerick",
     "name": "Thomand Gate Whiskey",
     "spiritType": "Whiskey",
     "description": "A smooth and creamy whiskey from the historic city of Limerick."
   },
   {
-    "county": "longford",
+    "county": "Longford",
     "name": "Sling Shot Gin",
     "spiritType": "Gin",
     "description": "A sweet and floral gin made with local elderflowers."
   },
   {
-    "county": "louth",
+    "county": "Louth",
     "name": "Louth Honey Liqueur",
     "spiritType": "Liqueur",
     "description": "A whiskey liqueur sweetened with Boyne Valley honey."
   },
   {
-    "county": "mayo",
+    "county": "Mayo",
     "name": "Mayo Atlantic Gin",
     "spiritType": "Gin",
     "description": "A refreshing gin with botanicals from the Mayo coastline."
   },
   {
-    "county": "meath",
+    "county": "Meath",
     "name": "Meath Single Malt",
     "spiritType": "Whiskey",
     "description": "A historic single malt from the Royal County."
   },
   {
-    "county": "monaghan",
+    "county": "Monaghan",
     "name": "Rogues Reserve Whiskey",
     "spiritType": "Whiskey",
     "description": "A smooth and elegant whiskey from the heart of Monaghan."
   },
   {
-    "county": "offaly",
+    "county": "Offaly",
     "name": "Tullamore Dew Whiskey",
     "spiritType": "Whiskey",
     "description": "A classic whiskey from the Irish midlands."
   },
   {
-    "county": "roscommon",
+    "county": "Roscommon",
     "name": "Xin Gin",
     "spiritType": "Gin",
     "description": "A unique gin distilled from the waters of Roscommon."
   },
   {
-    "county": "sligo",
+    "county": "Sligo",
     "name": "Ahtrú Whiskey",
     "spiritType": "Whiskey",
     "description": "A smooth whiskey from the Sligo region."
   },
   {
-    "county": "tipperary",
+    "county": "Tipperary",
     "name": "Tullamaine Gin",
     "spiritType": "Gin",
     "description": "A world-class gin from the Golden Vale."
   },
   {
-    "county": "tyrone",
+    "county": "Tyrone",
     "name": "Symphonia Gin",
     "spiritType": "Gin",
     "description": "A smooth and elegant gin."
   },
   {
-    "county": "waterford",
+    "county": "Waterford",
     "name": "Blackwater Poitín",
     "spiritType": "Poitín",
     "description": "A terroir-driven Poitín from the sunny southeast."
   },
   {
-    "county": "westmeath",
+    "county": "Westmeath",
     "name": "Kilbeggan Whiskey",
     "spiritType": "Whiskey",
     "description": "A smooth and elegant whiskey from the heart of Ireland's Lakelands."
   },
   {
-    "county": "wexford",
+    "county": "Wexford",
     "name": "Jackford Strawberry Gin",
     "spiritType": "Gin",
     "description": "A fruity gin made with famous Wexford strawberries."
   },
   {
-    "county": "wicklow",
+    "county": "Wicklow",
     "name": "Fercullen Whiskey",
     "spiritType": "Whiskey",
     "description": "A smooth and elegant whiskey from the Garden of Ireland."

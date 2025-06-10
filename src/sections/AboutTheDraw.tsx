@@ -1,61 +1,61 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Box, Typography, Grid, Paper } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import MainVisual from '../assets/marketing_assets/spirit_draw_main_visual.png';
 
 const AboutTheDraw: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <Box id="about" sx={{ py: { xs: 4, md: 8 } }}>
-        <Grid container spacing={{ xs: 2, md: 4 }} alignItems="center">
-          <Grid item xs={12} md={6}>
-            <Box
-              component="img"
-              src={MainVisual}
-              alt={t('aboutTheDraw.visualAlt')}
-              sx={{
-                width: '100%',
-                height: 'auto',
-                borderRadius: 2,
-              }}
-            />
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <Typography variant="h3" component="h2" gutterBottom>
-              {t('aboutTheDraw.title')}
+    <Box 
+      id="about" 
+      maxWidth="lg"
+      className="px-8 md:px-16"
+    >
+      <Box className="flex flex-col md:flex-row gap-4 md:gap-8 items-center">
+        <Box className="w-full md:w-2/5 flex justify-center items-center rounded-lg">
+          <Box
+            component="img"
+            src={MainVisual}
+            alt={t('aboutTheDraw.visualAlt')}
+            className="w-full max-w-[400px] h-auto p-4"
+          />
+        </Box>
+        <Box className="w-full md:w-3/5">
+          <Typography variant="h2" component="h2" gutterBottom>
+            {t('aboutTheDraw.title')}
+          </Typography>
+          <Box>
+            <Typography variant="h6" component="h3" className="mb-2">
+              {t('aboutTheDraw.howItWorksTitle')}
             </Typography>
-            <Box>
-              <Typography variant="h5" component="h3" gutterBottom>
-                {t('aboutTheDraw.howItWorksTitle')}
-              </Typography>
-              <Typography variant="body1" paragraph>
-                {t('aboutTheDraw.howItWorksDetails')}
-              </Typography>
+            <Typography variant="body1" gutterBottom>
+              {t('aboutTheDraw.howItWorksDetails')}
+            </Typography>
 
-              <Typography variant="h5" component="h3" gutterBottom>
-                {t('aboutTheDraw.whenTitle')}
-              </Typography>
-              <Typography variant="body1" paragraph>
-                {t('aboutTheDraw.whenDetails')}
-              </Typography>
+            <Typography variant="h6" component="h3" className="mb-2">
+              {t('aboutTheDraw.whenTitle')}
+            </Typography>
+            <Typography variant="body1" gutterBottom>
+              {t('aboutTheDraw.whenDetails')}
+            </Typography>
 
-              <Typography variant="h5" component="h3" gutterBottom>
-                {t('aboutTheDraw.howMuchTitle')}
-              </Typography>
-              <Typography variant="body1" paragraph>
-                {t('aboutTheDraw.howMuchDetails')}
-              </Typography>
+            <Typography variant="h6" component="h3" className="mb-2">
+              {t('aboutTheDraw.howMuchTitle')}
+            </Typography>
+            <Typography variant="body1" gutterBottom>
+              {t('aboutTheDraw.howMuchDetails')}
+            </Typography>
 
-              <Typography variant="h5" component="h3" gutterBottom>
-                {t('aboutTheDraw.whoBenefitsTitle')}
-              </Typography>
-              <Typography variant="body1" paragraph>
-                {t('aboutTheDraw.whoBenefitsDetails')}
-              </Typography>
-            </Box>
-          </Grid>
-        </Grid>
+            <Typography variant="h6" component="h3" className="mb-2">
+              {t('aboutTheDraw.whoBenefitsTitle')}
+            </Typography>
+            <Typography variant="body1" gutterBottom>
+              {t('aboutTheDraw.whoBenefitsDetails')}
+            </Typography>
+          </Box>
+        </Box>
+      </Box>
     </Box>
   );
 };

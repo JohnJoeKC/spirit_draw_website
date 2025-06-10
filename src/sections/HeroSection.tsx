@@ -9,14 +9,14 @@ const HeroSection: React.FC = () => {
   const { t } = useTranslation();
   return (
     <Box
-      className="flex flex-col md:flex-row items-center justify-center gap-5"
-      sx={{ mt: 4 }} // Added some margin top for spacing from the new Header
+      maxWidth="lg"
+      className="flex flex-col md:flex-row items-center justify-center gap-5 px-8 md:px-16"
     >
       <Box className="flex flex-col w-full text-center md:flex-1 md:max-w-[60%] items-center justify-center">
         <Typography variant="h1" component="h1" gutterBottom>
           {t('hero.title')}
         </Typography>
-        <Typography variant="h4" component="p">
+        <Typography variant="h5" component="p">
           {t('hero.subtitle')}
         </Typography>
         <img src={FullLineup} alt="Full Lineup" className="w-full h-auto mt-4" />

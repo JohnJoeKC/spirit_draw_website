@@ -17,8 +17,8 @@ const theme = createTheme({
       paper: '#EEEEEE',
     },
   },
-  typography: {
-    fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+    typography: {
+      fontFamily: '"Garamond", "EB Garamond", serif',
     h1: {
       fontFamily: '"Garamond", "EB Garamond", serif',
       fontSize: '3rem',
@@ -36,8 +36,8 @@ const theme = createTheme({
     },
     h4: {
       fontFamily: '"Cormorant Garamond", serif',
-      fontSize: '1.75rem',
-      fontWeight: 500,
+      fontSize: '1.5rem',
+      fontWeight: 700,
     },
     h5: {
       fontFamily: '"Cormorant Garamond", serif',
@@ -46,11 +46,17 @@ const theme = createTheme({
     },
     h6: {
       fontFamily: '"Cormorant Garamond", serif',
-      fontSize: '1.25rem',
-      fontWeight: 500,
+      fontSize: '1.2rem',
+      fontWeight: 800,
     },
     body1: {
+      fontSize: '1.2rem',
+      fontWeight: 400,
+      lineHeight: 1.5,
+    },
+    body2: {
       fontSize: '1rem',
+      fontWeight: 400,
       lineHeight: 1.5,
     },
   },

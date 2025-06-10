@@ -5,15 +5,11 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Tooltip from '@mui/material/Tooltip';
 import Box from '@mui/material/Box';
-
-// Import flag images
-// Ensure these paths are correct relative to this component's location or use absolute paths from /src
-import englishFlag from '../assets/language_flags/british.png';
-import irishFlag from '../assets/language_flags/irish.png';
+import LanguageIcon from '@mui/icons-material/Language';
 
 const languages = [
-  { code: 'en', nameKey: 'english', flag: englishFlag, altText: 'English flag' },
-  { code: 'ga', nameKey: 'irish', flag: irishFlag, altText: 'Irish flag' },
+  { code: 'en', nameKey: 'english' },
+  { code: 'ga', nameKey: 'irish' },
 ];
 
 const LanguageChanger: React.FC = () => {
@@ -40,11 +36,10 @@ const LanguageChanger: React.FC = () => {
     <Box className="flex items-center">
       <Tooltip title={t('language') || 'Change language'}>
         <IconButton onClick={handleClick} size="small" className="ml-1 p-1">
-          <img 
-            src={currentLanguage.flag} 
-            alt={currentLanguage.altText} 
-            style={{ width: '24px', height: 'auto' }}
-          />
+          <Box className="flex items-center">
+            <LanguageIcon />
+            <span className="ml-1 text-sm">{currentLanguage.code.toUpperCase()}</span>
+          </Box>
         </IconButton>
       </Tooltip>
       <Menu
@@ -62,12 +57,11 @@ const LanguageChanger: React.FC = () => {
             onClick={() => changeLanguage(lang.code)}
             className="flex items-center justify-between min-w-24"
           >
-            <span style={{ marginRight: '8px' }}>{t(lang.nameKey)}</span>
-            <img 
-              src={lang.flag} 
-              alt={lang.altText} 
-              style={{ width: '20px', height: 'auto' }}
-            />
+            <Box className="flex items-center">
+              <LanguageIcon className="mr-2" />
+              <span>{t(lang.nameKey)}</span>
+              <span className="ml-2 text-sm text-gray-500">({lang.code.toUpperCase()})</span>
+            </Box>
           </MenuItem>
         ))}
       </Menu>

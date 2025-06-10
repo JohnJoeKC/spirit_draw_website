@@ -48,9 +48,11 @@ const Header: React.FC = () => {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'left', p: 2 }}>
-      <Box sx={{ my: 2, display: 'flex', justifyContent: 'flex-start' }}>
+      <Box 
+        maxWidth="lg"
+        className="flex justify-start">
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          LOGO
+          SPIRIT DRAW
         </Typography>
       </Box>
       <List>
@@ -80,7 +82,9 @@ const Header: React.FC = () => {
                 }
               }}
             >
-              {t(item.labelKey)}
+              <Typography variant="body1">
+                {t(item.labelKey)}
+              </Typography>
             </Button>
           </ListItem>
         ))}
@@ -102,11 +106,14 @@ const Header: React.FC = () => {
   );
 
   return (
-    <AppBar position="sticky" color="inherit" elevation={0} sx={{ backgroundColor: 'background.paper' }}>
-      <Container className="w-full"> 
+    <AppBar className="flex items-center" position="sticky" color="inherit" elevation={0} sx={{ backgroundColor: 'background.paper' }}>
+      <Box 
+        maxWidth="lg"
+        className="w-full px-8 md:px-16"
+      > 
         <Toolbar disableGutters>
           <Typography variant="h6" component="div" sx={{ mr: 2, display: { xs: 'flex', md: 'flex' } }}>
-            <a href="/" style={{ textDecoration: 'none', color: 'inherit' }}>LOGO</a>
+            <a href="/" style={{ textDecoration: 'none', color: 'inherit' }}>SPIRIT DRAW</a>
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
@@ -136,12 +143,14 @@ const Header: React.FC = () => {
                   }
                 }}
               >
-                {t(item.labelKey)}
+                <Typography variant="body1">
+                  {t(item.labelKey)}
+                </Typography>
               </Button>
             ))}
           </Box>
 
-          <Box sx={{ display: 'flex', alignItems: 'center', flexGrow: { xs: 1, md: 0 }, justifyContent: 'flex-end' }}>
+          <Box className="flex items-center flex-grow justify-end">
             <LanguageChanger />
 
             <Button
@@ -167,7 +176,7 @@ const Header: React.FC = () => {
             </IconButton>
           </Box>
         </Toolbar>
-      </Container>
+      </Box>
 
       <Drawer
         anchor="right"

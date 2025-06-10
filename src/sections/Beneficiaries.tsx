@@ -4,7 +4,11 @@ import Container from '@mui/material/Container';
 
 const Beneficiaries: React.FC = () => {
   return (
-    <Container sx={{ py: 8 }} id="beneficiaries">
+    <Container 
+      maxWidth="lg"
+      className="py-8"
+      id="beneficiaries"
+    >
       <Typography variant="h2" component="h2" gutterBottom align="center">
         Beneficiaries
       </Typography>

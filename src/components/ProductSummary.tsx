@@ -33,7 +33,7 @@ const ProductSummary: React.FC<ProductSummaryProps> = ({ image, name, county, sp
         />
       </Box>
       <CardContent className="flex flex-col flex-grow justify-end">
-        <Typography gutterBottom variant="h5" component="div" style={{ textTransform: 'capitalize' }}>
+        <Typography gutterBottom variant="h6" component="div" style={{ textTransform: 'capitalize' }}>
           {name}
         </Typography>
         <Typography variant="body2" color="text.secondary">

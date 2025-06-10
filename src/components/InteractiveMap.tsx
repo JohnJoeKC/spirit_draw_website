@@ -281,8 +281,8 @@ const InteractiveMap: React.FC = () => {
   }, [svgRef.current]);
 
   return (
-    <Box className="flex flex-col h-full w-full max-h-[400px] max-w-[300px] p-4">
-      <Typography variant="h5" component="h1" className="text-center mb-4">
+    <Box className="flex flex-col items-center justify-center h-full max-h-[400px] gap-4 overflow-hidden">
+      <Typography variant="h5" component="h1">
         {t('mapTitle')} {/* Use t function for translation */}
       </Typography>
       {errorMessage && (
@@ -290,14 +290,16 @@ const InteractiveMap: React.FC = () => {
           {errorMessage}
         </Alert>
       )}
-      <Box className="relative flex-1 w-full" style={{ aspectRatio: '1449.8/1807.07' }}> {/* Match SVG's aspect ratio */}
+      <Box className="flex items-center justify-center overflow-hidden flex-1 w-110% overflow-hidden" style={{ aspectRatio: '1449.8/1807.07' }}> {/* Match SVG's aspect ratio */}
         <object 
           ref={svgRef} 
           type="image/svg+xml" 
           aria-label="Interactive map of Ireland"
-          className="absolute inset-0 w-full h-full max-h-[400px] max-w-[300px]" // Fill container while maintaining aspect ratio
-          style={{ 
-            display: 'block'
+          className="flex items-center justify-center inset-0 w-full h-full overflow-hidden" // Fill container while maintaining aspect ratio
+          style={{
+            overflow: 'hidden',
+            width: '110%',
+            height: '110%',
           }}
         >
           Map of Ireland loading...

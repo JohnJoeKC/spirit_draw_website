@@ -64,7 +64,7 @@ const PrizesCarousel: React.FC = () => {
     prevArrow: <PrevArrow />,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1280,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
@@ -88,12 +88,12 @@ const PrizesCarousel: React.FC = () => {
   };
 
   return (
-    <Box className="w-full relative" sx={{ px: { xs: 2, sm: 6, md: 10, lg: 12 }, pb: 8 }}>
+    <Box className="w-full relative">
       <Slider {...settings} className="pb-20 sm:pb-12 lg:pb-6">
         {prizes.map((prize) => (
           <div key={prize.county} className="px-2">
             <ProductSummary
-              image={`/product_images/${prize.county}.png`}
+              image={`/product_images/${prize.county.toLowerCase()}.png`}
               name={prize.name}
               county={prize.county}
               spiritType={prize.spiritType}

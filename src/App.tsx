@@ -41,18 +41,39 @@ function App() {
       <CssBaseline /> {/* CssBaseline should be after ThemeProvider to use theme defaults */}
       {isAgeVerified ? (
         <>
-          <Header /> {/* Header is now at the top */}
-          <Container maxWidth="lg"> {/* Main content container */}
-            <Box className="min-h-screen py-8">
-              <HeroSection />
-              <AboutTheDraw />
-              <Prizes />
-              <Beneficiaries />
+          <Header/> {/* Header is now at the top */}
+          <Container 
+            maxWidth={false}
+            disableGutters
+            className="flex flex-col items-center justify-center w-full mt-10"
+          > {/* Main content container */}
+
+            <Box className="flex flex-col items-center justify-center w-full gap-10">
+              <Box className="flex flex-col items-center w-full">
+                <HeroSection />
+              </Box>
+              <Box 
+                className="flex flex-col items-center w-full" 
+                sx={{ backgroundColor: 'background.paper' }}>
+                <AboutTheDraw />
+              </Box>
+              <Box className="flex flex-col items-center w-full">
+                <Prizes />
+              </Box>
+              <Box 
+                className="flex flex-col items-center w-full" 
+                sx={{ backgroundColor: 'background.paper' }}>
+                <Beneficiaries />
+              </Box>
             </Box>
           </Container>
         </>
       ) : accessDeniedMessageKey ? (
-        <Container maxWidth="lg"> {/* Ensure consistent container usage */}
+        <Container 
+          maxWidth={false}
+          disableGutters
+          className="w-full"
+        > {/* Ensure consistent container usage */}
           <div className="min-h-screen flex flex-col items-center justify-center py-8">
             <Typography variant="h6" color="error" align="center">
               {t(accessDeniedMessageKey)} {/* Translate the message */}
