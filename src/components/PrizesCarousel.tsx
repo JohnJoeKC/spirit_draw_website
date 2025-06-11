@@ -98,6 +98,7 @@ const PrizesCarousel: React.FC = () => {
               county={prize.county}
               spiritType={prize.spiritType}
               description={prize.description}
+              link={prize.link || ''}
             />
           </div>
         ))}

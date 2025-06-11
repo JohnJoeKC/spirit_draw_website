@@ -3,13 +3,15 @@
     "county": "Antrim",
     "name": "Lír Whiskey",
     "spiritType": "Whiskey",
-    "description": "A premium Irish whiskey that captures the essence of the stunning landscape of the Glens of Antrim."
+    "description": "A premium Irish whiskey that captures the essence of the stunning landscape of the Glens of Antrim.",
+    "link": "https://glensofantrimdistillery.com/"
   },
   {
     "county": "Carlow",
     "name": "Busker Blended Whiskey",
     "spiritType": "Whiskey",
-    "description": "A meticulous blend of high-quality Single Grain, alongside a generous infusion of Single Malt and Single Pot Still, striking the perfect balance of strength and sophistication."
+    "description": "A meticulous blend of high-quality Single Grain, alongside a generous infusion of Single Malt and Single Pot Still, striking the perfect balance of strength and sophistication.",
+    "link": "https://thebusker.com/the-busker-blend/"
   },
   {
     "county": "Cavan",
@@ -21,7 +23,7 @@
     "county": "Clare",
     "name": "Bunratty Mead",
     "spiritType": "Mead",
-    "description": "A medium-sweet mead made from an ancient Irish recipe which including vine fruits, honey and herbs. Mead is the traditional drink of newly-weds and is the where the word 'honeymoon' comes from."
+    "description": "A medium-sweet mead made from an ancient Irish recipe including vine fruits, honey and herbs. Mead is the traditional drink of newly-weds, where the word 'honeymoon' comes from."
   },
   {
     "county": "Cork",
@@ -39,13 +41,13 @@
     "county": "Donegal",
     "name": "Muff Potato Gin",
     "spiritType": "Gin",
-    "description": "Multi-award winning gin distilled using four different types of Irish potatoes. Low juniper profile, uniquely infused with mandarin, rosemary, lemon and elderflower botanicals, finished with champagne extract."
+    "description": "Multi-award winning gin distilled using four different types of Irish potatoes. Infused with mandarin, rosemary, lemon and elderflower botanicals, finished with champagne extract."
   },
   {
     "county": "Down",
     "name": "Copeland Smuggler's Rum",
     "spiritType": "Rum",
-    "description": "An award-winning rum from the shores of Strangford Lough."
+    "description": "Inspired by the smuggling through the Copeland Islands during the 18th & 19th century. A marriage of light rum from the distillery and heavy rum from Barbados."
   },
   {
     "county": "Dublin",
@@ -57,19 +59,21 @@
     "county": "Fermanagh",
     "name": "Boatyard Vodka",
     "spiritType": "Vodka",
-    "description": "A traditional Irish vodka from the Fermanagh Lakelands."
+    "description": "Small-batch vodka made from Irish wheat is traceable back to the exact field it was grown in. Unfiltered and crafted with a seed-to-sip ethos, it offers a pure, complex flavour."
   },
   {
     "county": "Galway",
     "name": "Connemara Whiskey",
     "spiritType": "Whiskey",
-    "description": "A smooth whiskey from the Connemara region."
+    "description": "The only Irish Peated Single Malt Whiskey widely available. Inspired by the 18th century art of drying malting barley over peat fires, it possesses a distinct peaty flavour and aroma.",
+    "link": "https://www.connemarawhiskey.com/connemara-original"
   },
   {
     "county": "Kerry",
     "name": "Dingle Vodka",
     "spiritType": "Vodka",
-    "description": "A great tasting smooth vodka that is quintuple distilled. This vodka comes highly acclaimed after winning Best Irish Vodka at the Irish Whiskey Awards in 2015, 2017, and 2024!"
+    "description": "A great tasting smooth vodka that is quintuple distilled. This vodka comes highly acclaimed after winning Best Irish Vodka at the Irish Whiskey Awards in 2015, 2017, and 2024!",
+    "link": "https://dingledistillery.ie/vodka/"
   },
   {
     "county": "Kildare",
@@ -81,13 +85,15 @@
     "county": "Kilkenny",
     "name": "BallyKeefe Gin",
     "spiritType": "Gin",
-    "description": "A smooth and flavourful gin from Kilkenny."
+    "description": "Based on their award-winning Extra Dry Gin, fermented for 7 months in the fruit of the blackthorn, giving it it's flavour and colour. Gold Medal at the 2019 World Liqueur Awards.",
+    "link": "https://ballykeefedistillery.ie/product/ballykeefe-sloe-gin/"
   },
   {
     "county": "Laois",
     "name": "Feeney's Irish Cream",
     "spiritType": "Irish Cream",
-    "description": "A smooth and creamy Irish cream liqueur."
+    "description": "Crafted with fresh cream from local dairies and blended within 24 hours with triple-distilled, barrel-aged Irish whiskey, Feeney’s offers a rich, smooth taste in every bottle.",
+    "link": "https://www.gapdrinks.com/feeneys"
   },
   {
     "county": "Leitrim",
@@ -99,13 +105,15 @@
     "county": "Limerick",
     "name": "Thomand Gate Whiskey",
     "spiritType": "Whiskey",
-    "description": "A smooth and creamy whiskey from the historic city of Limerick."
+    "description": "Limited edition to celebrate Limerick's 4th consecutive All-Ireland Hurling Championship. A vatting of multiple casks creating a harmonious blend of strength and subtlety.",
+    "link": "https://thomondgatewhiskey.com/"
   },
   {
     "county": "Longford",
     "name": "Sling Shot Gin",
     "spiritType": "Gin",
-    "description": "A sweet and floral gin made with local elderflowers."
+    "description": "The first distillery to ever distil peat as a botanical in gin. This creates an incredibly rich and smooth mouthfeel, adding a deliciously earthy finish to our otherwise bold and fresh Irish gin.",
+    "link": "https://www.lrd.ie/sling-shot-gin/"
   },
   {
     "county": "Louth",

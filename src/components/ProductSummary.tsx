@@ -7,17 +7,19 @@ interface ProductSummaryProps {
   county: string;
   spiritType: string;
   description: string;
+  link: string;
 }
 
 const CARD_HEIGHT = 380;
 const IMAGE_BOX_HEIGHT = 200;
 
-const ProductSummary: React.FC<ProductSummaryProps> = ({ image, name, county, spiritType, description }) => {
+const ProductSummary: React.FC<ProductSummaryProps> = ({ image, name, county, spiritType, description, link }) => {
   return (
     <Card className="flex flex-col h-full" style={{ height: CARD_HEIGHT }}>
       <Box
-        className="flex items-start justify-center w-full"
+        className="flex items-start justify-center w-full cursor-pointer"
         style={{ height: IMAGE_BOX_HEIGHT, background: 'transparent' }}
+        onClick={() => window.open(link, '_blank')}
       >
         <img
           src={image}
@@ -37,7 +39,8 @@ const ProductSummary: React.FC<ProductSummaryProps> = ({ image, name, county, sp
           gutterBottom 
           variant="h6" 
           component="div" 
-          style={{ textTransform: 'capitalize', fontSize: '1.2rem' }}
+          style={{ textTransform: 'capitalize', fontSize: '1.2rem', cursor: 'pointer' }}
+          onClick={() => window.open(link, '_blank')}
         >
           {name}
         </Typography>
